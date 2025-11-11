@@ -189,7 +189,7 @@ export default function Projects() {
         { name: 'Three.js', color: '#049ef4' },
         { name: 'JavaScript', color: '#f7df1e' },
       ],
-      githubUrl: 'https://github.com/yourusername/portfolio',
+      githubUrl: 'https://github.com/aliburkemper12/my-portfolio',
     },
     {
       title: 'Movie Rating Prediction & Analysis',
