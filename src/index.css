@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Sunset-inspired color palette */
+  --bg-primary: #1a0a2e;        /* Deep purple/navy - dark base */
+  --bg-secondary: #16213e;      /* Slightly lighter navy */
+  --bg-tertiary: #0f3460;       /* Muted blue for cards/sections */
+  
+  --text-primary: #ffffff;      /* White text */
+  --text-secondary: #e8d5b7;    /* Warm cream/beige */
+  --text-muted: #a08e7a;        /* Muted tan */
+  
+  --accent: #ff6b35;            /* Vibrant orange (main accent) */
+  --accent-secondary: #f7931e;  /* Golden orange */
+  --accent-tertiary: #8b5cf6;   /* Purple accent */
+  
+  --accent-glow: rgba(255, 107, 53, 0.4);  /* Orange glow */
+  --purple-glow: rgba(139, 92, 246, 0.3);  /* Purple glow */
+  
+  /* Gradient variants */
+  --gradient-sunset: linear-gradient(135deg, #ffd93d 0%, #ff6b35 50%, #6c5ce7 100%);
+  --gradient-warm: linear-gradient(135deg, #ff9a76 0%, #ff6b35 100%);
+  --gradient-cool: linear-gradient(135deg, #a78bfa 0%, #6c5ce7 100%);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
