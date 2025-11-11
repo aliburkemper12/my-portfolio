@@ -183,7 +183,7 @@ export default function Projects() {
     {
       title: 'Portfolio Website',
       description: 'A modern, interactive portfolio showcasing my work with stunning 3D animations and smooth transitions.',
-      image: 'src/assets/portfolio-ss.png',
+      image: 'assets/portfolio-ss.png',
       techStack: [
         { name: 'React', color: '#61dafb' },
         { name: 'Three.js', color: '#049ef4' },
@@ -197,7 +197,7 @@ export default function Projects() {
     {
       title: 'Movie Rating Prediction & Analysis',
       description: 'Data science project exploring web scraping, feature engineering, and machine learning to predict and analyze movie ratings from Rotten Tomatoes.',
-      image: 'src/assets/data-ss.png',
+      image: 'assets/data-ss.png',
       techStack: [
         { name: 'Python', color: '#61dafb' },
         { name: 'Pandas', color: '#3178c6' },
@@ -210,7 +210,7 @@ export default function Projects() {
     {
       title: 'Texture Mapping in WebGL',
       description: 'Interactive 3D application demonstrating texture mapping techniques using WebGL.',
-      image: 'src/assets/texture-ss.png',
+      image: 'assets/texture-ss.png',
       techStack: [
         { name: 'JavaScript', color: '#f7df1e' },
         { name: 'WebGL', color: '#29b6f6' },
@@ -221,7 +221,7 @@ export default function Projects() {
     {
       title: 'AI Movie Database Web App',
       description: 'A web application that leverages AI to provide movie reviews and actor sentiments.',
-      image: 'src/assets/cinfiler-ss.png',
+      image: 'assets/cinfiler-ss.png',
       techStack: [
         { name: 'ASP.NET', color: '#512bd4' },
         { name: 'C#', color: '#178600' },
@@ -238,7 +238,7 @@ export default function Projects() {
     {
     title: 'Inventory Management System',
     description: 'A comprehensive inventory management system designed to streamline stock tracking for small businesses.',
-    image: 'src/assets/inventory-ss.png',
+    image: 'assets/inventory-ss.png',
     techStack: [
         { name: 'Python', color: '#3178c6' },
         { name: 'Flask', color: '#000000' },

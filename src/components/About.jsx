@@ -6,8 +6,8 @@ export default function About() {
   const [currentImage, setCurrentImage] = useState(0);
   
   const images = [
-    'src/assets/headshot.jpg',
-    'src/assets/alabama-football.webp',
+    'assets/headshot.jpg',
+    'assets/alabama-football.webp',
   ];
 
   const nextImage = () => {
