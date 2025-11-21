@@ -208,15 +208,15 @@ export default function Projects() {
       ],
     },
     {
-      title: 'Texture Mapping in WebGL',
-      description: 'Interactive 3D application demonstrating texture mapping techniques using WebGL.',
-      image: 'assets/texture-ss.png',
+      title: 'WebGL 3D Graphics Project',
+      description: 'Interactive 3D solar system model demonstrating graphics concepts.',
+      image: 'assets/solarmodel.png',
       techStack: [
         { name: 'JavaScript', color: '#f7df1e' },
         { name: 'WebGL', color: '#29b6f6' },
         { name: 'HTML', color: '#e34c26' },
       ],
-      githubUrl: 'https://github.com/aliburkemper12/Textures-WebGL',
+      githubUrl: 'https://github.com/aliburkemper12/solarModel',
     },
     {
       title: 'AI Movie Database Web App',
