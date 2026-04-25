@@ -133,7 +133,7 @@ export default function AnimatedCloudsHero({ onScrollToProjects }) {
             textShadow: '1px 1px 2px rgba(255,255,255,0.5)',
           }}
         >
-          Undergraduate Computer Science Major - Aspiring Software Developer - Tech Enthusiast
+          Full-Stack Software Engineer
         </p>
 
       </div>

@@ -63,8 +63,7 @@ export default function About() {
               color: '#e8d5b7',
               marginBottom: '1.5rem',
             }}>
-              Hey! I’m Ali — a senior at the University of Alabama studying Computer Science and an aspiring full-stack developer. I love creating beautiful, interactive web experiences that blend creativity with functionality. When I’m not coding, you can usually find me painting, practicing guitar, or playing sports.
-            </p>
+              I’m Ali, a Software Engineer I based in Alabama and a recent Computer Science graduate from the University of Alabama. I focus on building reliable, user-focused applications across the stack, with experience in both frontend and backend development. Outside of work, I spend time making music, playing guitar, and staying active through sports.            </p>
             
             <p style={{
               fontSize: '1.1rem',
@@ -72,9 +71,7 @@ export default function About() {
               color: '#e8d5b7',
               marginBottom: '1.5rem',
             }}>
-I’m passionate about building and designing modern web applications that bring ideas to life. 
-  My experience spans front-end and back-end development, where I’ve worked on projects involving dynamic UIs, database design, and process automation. 
-  I enjoy solving technical challenges, learning new technologies, and creating tools that make a real impact.            </p>
+I enjoy diving into complex concepts, collaborating with teams to build things, and staying current with the constantly evolving tech landscape.            </p>
 
             <div style={{
               display: 'flex',
@@ -348,7 +345,7 @@ I’m passionate about building and designing modern web applications that bring
                   fontSize: '1rem',
                   color: '#a08e7a',
                 }}>
-                  Expected Graduation: May 2026
+                  May 2026
                 </p>
               </div>
               
@@ -483,7 +480,7 @@ I’m passionate about building and designing modern web applications that bring
                   color: '#a08e7a',
                   fontWeight: 600,
                 }}>
-                  September 2025 - Present
+                  September 2025 - May 2026
                 </p>
               </div>
               <ul style={{

@@ -45,7 +45,7 @@ function TechIcon({ name, color }) {
 }
 
 // Individual project card component
-function ProjectCard({ title, description, image, techStack, githubUrl, demoUrl }) {
+function ProjectCard({ title, description, image, techStack, githubUrl, demoUrl, reportUrl }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -140,6 +140,26 @@ function ProjectCard({ title, description, image, techStack, githubUrl, demoUrl 
               Live Demo →
             </a>
           )}
+          {reportUrl && (
+            <a
+              href={reportUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                padding: '0.75rem 1.5rem',
+                background: '#10b981',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '30px',
+                fontWeight: 600,
+                transition: 'transform 0.2s',
+              }}
+              onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'}
+              onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+            >
+              Report →
+            </a>
+          )}
         </div>
       </div>
 
@@ -181,18 +201,34 @@ function ProjectCard({ title, description, image, techStack, githubUrl, demoUrl 
 export default function Projects() {
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'A modern, interactive portfolio showcasing my work with stunning 3D animations and smooth transitions.',
-      image: 'assets/portfolio-ss.png',
+      title: 'LLM-Powered Movie Recommender (Gemma + KNN)',
+      description: 'Built in team of 3 for Data Science class - Natural-language movie search for streaming aggregators: Gemma 2 extracts genres/cast/themes from free-form queries, then a weighted TF-IDF + multi-hot feature space retrieves nearest neighbors from TMDb/IMDb data. Includes a Gradio UI and evaluation suite.',
+      image: 'assets/LLM_movie.png',
       techStack: [
-        { name: 'React', color: '#61dafb' },
-        { name: 'Three.js', color: '#049ef4' },
-        { name: 'JavaScript', color: '#f7df1e' },
-        { name: 'CSS', color: '#264de4' },
-        { name: 'HTML', color: '#e34c26' },
-        { name: 'Vite', color: '#646cff' },
+        { name: 'Python', color: '#3776ab' },
+        { name: 'Scikit-learn', color: '#f7931e' },
+        { name: 'Transformers', color: '#ffcc00' },
+        { name: 'Hugging Face', color: '#ffd21e' },
+        { name: 'Gradio', color: '#ff4b4b' },
+        { name: 'TMDb', color: '#01b4e4' },
+        { name: 'IMDb', color: '#f5c518' },
       ],
-      githubUrl: 'https://github.com/aliburkemper12/my-portfolio',
+      demoUrl: 'https://colab.research.google.com/drive/1ARtxlpBuvwnAVgU4P5VMAnUt0B0LJ_ba?usp=sharing',
+      reportUrl: 'assets/DatascienceFinalReport.docx',
+    },
+    {
+      title: 'EEG-Based Error Potentials Research Framework',
+      description: 'Capstone Project built in team of 5 - Low-cost end-to-end ErrP framework built with OpenBCI Ganglion and a native desktop visualizer. Includes a built-in Flanker Task streaming EEG at 200Hz with automatic event markers, CSV-to-EEGLAB conversion, and interactive ERP time series/topomap/joint-map analysis for recorded or external .set datasets.',
+      image: 'assets/errp.png',
+      techStack: [
+        { name: 'Python', color: '#3776ab' },
+        { name: 'OpenBCI', color: '#00a6a6' },
+        { name: 'EEGLAB', color: '#f59e0b' },
+        { name: 'NumPy', color: '#013243' },
+        { name: 'Pandas', color: '#150458' },
+        { name: 'PyQt', color: '#41cd52' },
+      ],
+      demoUrl: 'https://youtu.be/vCeJXkBbpe4',
     },
     {
       title: 'Movie Rating Prediction & Analysis',
@@ -206,49 +242,7 @@ export default function Projects() {
         { name: 'Matplotlib', color: '#ff6b35' },
         { name: 'Seaborn', color: '#6c5ce7' },
       ],
-    },
-    {
-      title: 'WebGL 3D Graphics Project',
-      description: 'Interactive 3D solar system model demonstrating graphics concepts.',
-      image: 'assets/solarmodel.png',
-      techStack: [
-        { name: 'JavaScript', color: '#f7df1e' },
-        { name: 'WebGL', color: '#29b6f6' },
-        { name: 'HTML', color: '#e34c26' },
-      ],
-      githubUrl: 'https://github.com/aliburkemper12/solarModel',
-    },
-    {
-      title: 'AI Movie Database Web App',
-      description: 'A web application that leverages AI to provide movie reviews and actor sentiments.',
-      image: 'assets/cinfiler-ss.png',
-      techStack: [
-        { name: 'ASP.NET', color: '#512bd4' },
-        { name: 'C#', color: '#178600' },
-        { name: 'JavaScript', color: '#f7df1e' },
-        { name: 'SQL Server', color: '#cc2927' },
-        { name: 'HTML', color: '#e34c26' },
-        { name: 'CSS', color: '#264de4' },
-        { name: 'Azure', color: '#0078d4' },
-        { name: 'OpenAI', color: '#10a37f' },
-      ],
-      githubUrl: 'https://github.com/aliburkemper12/Fall2025-Project3-aeburkemper?tab=readme-ov-file',
-      demoUrl: 'https://fall2025-project3-aeburkemper-appservice.azurewebsites.net/',
-    },
-    {
-    title: 'Inventory Management System',
-    description: 'A comprehensive inventory management system designed to streamline stock tracking for small businesses.',
-    image: 'assets/inventory-ss.png',
-    techStack: [
-        { name: 'Python', color: '#3178c6' },
-        { name: 'Flask', color: '#000000' },
-        { name: 'SQLite', color: '#003b57' },
-        { name: 'HTML', color: '#e34c26' },
-        { name: 'CSS', color: '#264de4' },
-        { name: 'JavaScript', color: '#f7df1e' },
-        { name: 'Ajax', color: '#ff6b35' },
-    ],
-    githubUrl: 'https://github.com/aliburkemper12/inventory-system-piston',
+      githubUrl: 'https://github.com/aliburkemper12/movie-rating-prediction',
     },
   ];
 
